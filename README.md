@@ -11,29 +11,29 @@ For this analysis, I will be given access to every student's math and reading sc
 
 1) 1st step in the analysis process is reading the data from the CSV file, clean the Data (remove prefix and suffix from students Names), and then organize the data in a readable table format, i.e. Date frame (df).
 
-![insert image 1]
+![image1](https://user-images.githubusercontent.com/80013773/114351575-a89bb400-9b1f-11eb-8fe5-840a99ed911b.PNG)
 
  2) Once we have a clean table; Named "student_Data_df"; I Will use the Loc. method on this Dataframe to select all the reading & math scores from the 9th grade at Thomas High School and replace them with null value "NaN". 
  
-  ![insert image 2]
+![image2](https://user-images.githubusercontent.com/80013773/114351676-c832dc80-9b1f-11eb-97d8-03b893b9ae6b.PNG)
  
 3)  After we replaced the math and reading scores for Thomas High school 9th Grade students in the "Student_Data_df" table, I will merge this table with the "school_data_df" table (using school Name as index), to create a combined "school_data_complete_df" table to repeat the school district and school analysis and summary.   
 
-![insert image 2]
+![image3](https://user-images.githubusercontent.com/80013773/114351739-e3055100-9b1f-11eb-8abe-256f0acaec72.PNG)
 
 4) Next I need to create a Datatables to present a district summary and school summary 
 
-![insert image 4]
-![insert image 5]
+![image4](https://user-images.githubusercontent.com/80013773/114351796-f57f8a80-9b1f-11eb-990e-3207bf5b2ea8.PNG)
+![image5](https://user-images.githubusercontent.com/80013773/114351846-03cda680-9b20-11eb-8681-5215b6dda154.PNG)
 
 5) Next, Need to use the Loc. Method to recalculate Average Math Score, Average reading score,"% passing reading", "% passing math", and "% overall passing". then we will create a "cleaned" Dataframe table that includes the recalculated values. 
 
-![insert image 6]
+![image6](https://user-images.githubusercontent.com/80013773/114351924-1647e000-9b20-11eb-8f01-895aafa95c1d.PNG)
 
 
 6) once we recalculated the new Parameters, we will use the refactored values to create a new DataFrame table to recalculate the district and school summary tables. 
 
-![insert image 6]
+![image7](https://user-images.githubusercontent.com/80013773/114351963-22cc3880-9b20-11eb-98e1-eda9ec6ba040.PNG)
 
 7) Once we created the data frame table with the refactored values, the next step to reuse the Code to aggregate, Format, and sort the data into the following summary tables:
 a. High and Low Performing Schools
